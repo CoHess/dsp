@@ -19,22 +19,32 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+> > Cheat sheet of commands
+* show current working directory path - pwd
+* creating a directory - mkdir
+* deleting a directory - rmdir
+* creating a file using `touch` command - touch new_file 
+* deleting a file - rm
+* renaming a file - mv
+* listing hidden files - ls -ld .?*
+* copying a file from one directory to another cp source destination
+* changing permissions - chmod 777 filename
+* checking scratch usage - free -g
 ---
+
 
 ### Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`  
-`ls -a`  
-`ls -l`  
-`ls -lh`  
-`ls -lah`  
-`ls -t`  
-`ls -Glp`  
+`ls`  - list
+`ls -a`  - list all
+`ls -l`  - long list
+`ls -lh`  - long list human readable
+`ls -lah`  - long list all human readable
+`ls -t`  - sort list my modification time
+`ls -Glp`  - do not list group as part of long list and append indicator slash to directories
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
 
 ---
 
@@ -42,7 +52,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ll -goh
+ll -t
+ll -u
+ll -gon
+ls -lah
 
 ---
 
@@ -50,7 +64,11 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs takes a command as an argument and applies that command on data it takes in from standard input
+The following command takes two arguments in from standard input separted by a space and takes them as arguments in the find command i.e. find all files ending in .csv or .txt.
+xargs -n 1 find -name
+"*.csv" "*.txt"
+
 
  
 
