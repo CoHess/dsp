@@ -36,13 +36,13 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 ### Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`  - list
-`ls -a`  - list all
-`ls -l`  - long list
-`ls -lh`  - long list human readable
-`ls -lah`  - long list all human readable
-`ls -t`  - sort list my modification time
-`ls -Glp`  - do not list group as part of long list and append indicator slash to directories
+`ls`  - list  
+`ls -a`  - list all  
+`ls -l`  - long list  
+`ls -lh`  - long list human readable  
+`ls -lah`  - long list all human readable  
+`ls -t`  - sort list my modification time  
+`ls -Glp`  - do not list group as part of long list and append indicator slash to directories  
 
 > > 
 
@@ -52,11 +52,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > ll -goh
-ll -t
-ll -u
-ll -gon
-ls -lah
+> > ll -goh  
+ll -t  
+ll -u  
+ll -gon  
+ls -lah  
 
 ---
 
@@ -65,9 +65,9 @@ ls -lah
 What does `xargs` do? Give an example of how to use it.
 
 > > xargs takes a command as an argument and applies that command on data it takes in from standard input
-The following command takes two arguments in from standard input separted by a space and takes them as arguments in the find command i.e. find all files ending in .csv or .txt.
-xargs -n 1 find -name
-"*.csv" "*.txt"
+The following command takes two arguments in from standard input separted by a space and takes them as arguments in the find command i.e. find all files ending in .csv or .txt.  
+xargs -n 1 find -name  
+"*.csv" "*.txt"  
 
 
  
