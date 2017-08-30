@@ -64,7 +64,7 @@ ls -lah
 
 What does `xargs` do? Give an example of how to use it.
 
-> > xargs takes a command as an argument and applies that command on data it takes in from standard input
+> > xargs takes a command as an argument and applies that command on data it takes in from standard input  
 The following command takes two arguments in from standard input separted by a space and takes them as arguments in the find command i.e. find all files ending in .csv or .txt.  
 xargs -n 1 find -name  
 "*.csv" "*.txt"  
