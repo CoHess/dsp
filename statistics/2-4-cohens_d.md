@@ -3,7 +3,7 @@
 Cohen's D = -0.08867236333202932
 
 Please code below for this solution:
-
+```
 import first
 import thinkstats2
 import nsfg
@@ -29,3 +29,4 @@ others_weight_n = others_weight.totalwgt_lb.count()
 
 pooled_var = (first_weight_n*first_weight_var+others_weight_n*others_weight_var)/(others_weight_n+first_weight_n)
 d= (first_weight_mean-others_weight_mean) / math.sqrt(pooled_var) 
+```
