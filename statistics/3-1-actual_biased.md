@@ -1,4 +1,6 @@
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased)
+Unbiased mean = 1.0 children/family
+Biased mean = 2.4 children/family
 
 ```
 resp = nsfg.ReadFemResp()
@@ -28,4 +30,19 @@ thinkplot.Config(xlabel='Num of Children', ylabel = 'Count')
 thinkplot.PrePlot(2)
 thinkplot.Pmfs([pmf_unbiased, pmf_biased])
 thinkplot.Config(xlabel='Num of Children', ylabel='PMF')
+
+total=0
+total_families=0
+for key, value in new_freq.items():
+    total+=key*value
+    total_families+=value
+    mean_new=total/total_families
+total=0
+total_families=0
+for key, value in old_freq.items():
+    total+=key*value
+    total_families+=value
+    mean_old=total/total_families
+print(mean_new)
+print(mean_old)
 ```
